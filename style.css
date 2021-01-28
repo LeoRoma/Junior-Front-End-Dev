@@ -1,0 +1,20 @@
+body,
+html{
+    margin: auto;
+    margin: 0;
+    background-color:lightgrey
+}
+
+.container{
+    display: flex;
+}
+
+.container-left{
+    border-color: red;
+    border-style: dashed;
+}
+
+.container-right{
+    border-color:blue;
+    border-style: double;
+}
