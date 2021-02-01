@@ -1,0 +1,19 @@
+#slide-bottom{
+    position: relative;
+    /* animation: mymove 5s infinite; */
+}
+
+#slide-bottom:nth-child(1){
+    animation: mymove 5s infinite;
+}
+#slide-bottom:nth-child(2){
+    animation: mymove 10s infinite;
+}
+#slide-bottom:nth-child(3){
+    animation: mymove 15s infinite;
+}
+
+@keyframes mymove{
+    from {top: -1000px;}
+    to {top: 0px;}
+}

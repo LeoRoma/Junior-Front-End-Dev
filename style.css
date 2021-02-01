@@ -30,30 +30,16 @@ html{
 }
 
 .col{
-    /* border-color: lightskyblue;
-    border-style: dotted; */
     width:34%;
     margin: auto;
     margin-left: 0;
     margin-bottom: 0;
-    /* text-align: center; */
     vertical-align: middle;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    /* background-color:white; */
-}
-/* 
-.black{
-    background-color: black;
 }
 
-.black h1{
-    color:white;
-}
-.white h1{
-    color:black
-} */
 .col h1{
     margin: auto;
     /* text-align: center; */
@@ -113,6 +99,7 @@ html{
     bottom: 0;
     width: 420px;
     height: 280px;
+
 
 }
 
