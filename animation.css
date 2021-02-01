@@ -4,16 +4,29 @@
 }
 
 #slide-bottom:nth-child(1){
-    animation: mymove 5s infinite;
+    animation: mymove 1s;
 }
 #slide-bottom:nth-child(2){
-    animation: mymove 10s infinite;
+    animation: mymove 2s;
 }
 #slide-bottom:nth-child(3){
-    animation: mymove 15s infinite;
+    animation: mymove 3s;
+}
+
+img{
+    animation: zoominoutsinglefeatured 2s;
 }
 
 @keyframes mymove{
     from {top: -1000px;}
     to {top: 0px;}
+}
+
+@keyframes zoominoutsinglefeatured{
+    0% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1,1);
+    }
 }

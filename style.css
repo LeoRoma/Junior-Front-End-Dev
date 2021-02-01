@@ -64,23 +64,26 @@ html{
     /* margin: auto; */
     left: 5%;
     width: 400px;
-    height: 450px;
+    height: 490px;
+    overflow: hidden;
 }
 
 .top-image-container img{
     /* margin: auto; */
     /* top: 0; */
-    margin: auto;
+    /* margin:/ auto; */
     width: 100%;
     height: 490px;
     object-fit:cover;
+    z-index: -100;
+    /* overflow:; */
 }
 
 .name{
-    /* text-align: center; */
+    text-align: center;
     margin: auto;
     margin-left: 270px;
-    margin-top: -60px;
+    margin-top: -100px;
     height: 240px;
 
 }
