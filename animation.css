@@ -4,30 +4,53 @@
 }
 
 #slide-bottom:nth-child(1){
-    animation: mymove 1s;
+    animation: slideInDown 1s;
 }
 #slide-bottom:nth-child(2){
-    animation: mymove 2s;
+    animation: slideInDown 2s;
 }
 #slide-bottom:nth-child(3){
-    animation: mymove 3s;
+    animation: slideInDown 3s;
     
 }
 
 img{
     animation-name: fadeIn, zoominoutsinglefeatured;
-    animation-duration: 4s, 4s;
-    
+    animation-duration: 4s, 4s;   
 }
 
-@keyframes mymove{
+.name h1{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: barAppear 4s;
+}
+
+.landing-page-text{
+    animation: fadeInUp 7s;
+}
+
+.circle{
+    fill: white;
+    stroke: black;
+    stroke-width: 2;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 1000;
+    animation: rotate 5s linear infinite;
+}
+
+.diagonal{
+    animation-name: type ;
+    animation-duration: 4s;
+}
+
+@keyframes slideInDown{
     from {top: -1000px;}
     to {top: 0px;}
 }
 
 @keyframes zoominoutsinglefeatured{
     0% {
-        transform: scale(1.5, 1.5);
+        transform: scale(2,2);
     }
     100% {
         transform: scale(1,1);
@@ -39,3 +62,38 @@ img{
     50% {opacity: 0.5;} 
 	100% {opacity: 1;} 
 }
+
+@keyframes barAppear
+{
+    from {
+        height: 0%
+    }
+    to {
+        height: 70%;
+    }
+}
+
+@keyframes fadeInUp{
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes type{
+    from {
+        width:0px;
+    }
+}
+
+@keyframes rotate{
+    to {
+        stroke-dashoffset: 0;
+      }
+}
+

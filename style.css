@@ -8,7 +8,7 @@ html{
     margin: auto;
     margin: 0;
     background-color:lightgrey;
-    font-family: built titling;
+    
 }
 
 .container{
@@ -42,26 +42,23 @@ html{
 
 .col h1{
     margin: auto;
-    /* text-align: center; */
     font-size: 17vw;
-    /* width:200px; */
     height: 940px;
     color:white;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    /* height: 940px; */
     font-weight: lighter;
+    font-family: built titling;
 }
 
 .container-right{
     padding-left: 2%;
-    /* border-color:blue;
-    border-style: double; */
+    width:100%;
+    height: 930px;
+
 }
 
 .top-image-container{
-    /* position: absolute; */
-    /* margin: auto; */
     left: 5%;
     width: 400px;
     height: 490px;
@@ -69,23 +66,22 @@ html{
 }
 
 .top-image-container img{
-    /* margin: auto; */
-    /* top: 0; */
-    /* margin:/ auto; */
     width: 100%;
     height: 490px;
     object-fit:cover;
     z-index: -100;
-    /* overflow:; */
 }
 
 .name{
+    position:relative;
     text-align: center;
     margin: auto;
     margin-left: 270px;
     margin-top: -100px;
     height: 240px;
-
+    width: 300px;
+    height: 350px;
+    z-index: -2px;
 }
 
 .name h1{
@@ -93,6 +89,7 @@ html{
     color: white;
     position: absolute;
     z-index: 2;
+    font-family: built titling;
 }
 
 .bottom-image-container{
@@ -102,16 +99,12 @@ html{
     bottom: 0;
     width: 420px;
     height: 280px;
-
-
 }
 
 .bottom-landing-page-container{
     margin: auto;
     bottom: 0;
     height: 160px;
-    /* border-color: lightslategrey;
-    border-style: transparent; */
 }
 
 .bottom-image-container img{
@@ -124,16 +117,46 @@ html{
 .landing-page-text{
     margin: auto;
     margin-left: 0;
-    margin-top:30%;
+    /* margin-top:30%; */
     width:230px;
-    /* margin-top:500px; */
     color: white;
-    /* border-color: lightslategrey;
-    border-style: double; */
 }
 
 .landing-page-text p{
     margin: auto;
     left: 0;
     font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
+
+
+.geometry{
+    margin: auto;
+    position: relative;
+    /* height: 400px; */
+    bottom:615px;
+}
+
+.circle{
+    margin: auto;
+    position:relative;
+    /* background-color: white; */
+    border-style:solid;
+    border-radius: 50%;
+    border-width: 1px;
+    width: 350px;
+    height: 350px;
+}
+
+.diagonal{
+    margin: auto;
+    position: relative;
+    border-style:solid;
+    color: white;
+    border-width: 1px;
+    transform: skewY(135deg);
+    width:500px;
+    bottom: 170px;
+}
+
