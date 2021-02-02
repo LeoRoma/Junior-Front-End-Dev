@@ -29,14 +29,7 @@ img{
     animation: fadeInUp 7s;
 }
 
-.circle{
-    fill: white;
-    stroke: black;
-    stroke-width: 2;
-    stroke-dasharray: 250;
-    stroke-dashoffset: 1000;
-    animation: rotate 5s linear infinite;
-}
+
 
 .diagonal{
     animation-name: type ;
@@ -91,9 +84,5 @@ img{
     }
 }
 
-@keyframes rotate{
-    to {
-        stroke-dashoffset: 0;
-      }
-}
+
 

@@ -138,16 +138,30 @@ html{
     bottom:615px;
 }
 
-.circle{
+
+svg{
+	position: relative;
     margin: auto;
-    position:relative;
-    /* background-color: white; */
-    border-style:solid;
-    border-radius: 50%;
-    border-width: 1px;
-    width: 350px;
-    height: 350px;
+    top: -20px;
+    left:235px;
+    /* height: 600;
+    width: 600; */
+
 }
+
+.circle {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 0;
+  fill:white;
+  animation: stroke 4s forwards;
+}
+
+@keyframes stroke {
+  from {
+    stroke-dashoffset: 1000;
+  }
+}
+
 
 .diagonal{
     margin: auto;
@@ -157,6 +171,9 @@ html{
     border-width: 1px;
     transform: skewY(135deg);
     width:500px;
-    bottom: 170px;
+    bottom: 250px;
 }
+
+
+
 
